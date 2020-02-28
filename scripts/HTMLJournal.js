@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Journal</title>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-
-<body>
-    
-    <article><h1>Daily Journal</h1></article>
-    <!-- <form action="">
-        <fieldset>
+const journalEntry = (journalObject) {
+    return `
+    <form action="">
+        <fieldset = "journal">
             <label for="journalDate">Date of entry</label>
             <input type="date" name="journalData" id="journalData">
         </fieldset>
@@ -39,8 +28,10 @@
             <option value="recordJournalEntry">Record Journal Entry</option>
         </button>
         </fieldset>
-    </form> -->
-    <script type="module" src="./scripts/main.js"></script>
-</body>
+    </form>`
+}
 
-</html>
+        // date: "02/18/2020",
+        // concept: "Command Line Interface - The Terminal",
+        // entry: "Learned some of the basic commands that we would be using.",
+        // mood: "Ok"
