@@ -23,7 +23,7 @@ const journal = [
     {
         date: "02/18/2020",
         concept: "Command Line Interface - The Terminal",
-        entry: "Learned some of the basic commands that we would be using.",
+        entry: "Learned some of the basic commands that we would be using in terminal.",
         mood: "Ok"
     }
 ]
