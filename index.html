@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Journal</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    <h1>Daily Journal</h1>
-    <form action=""></form>
+
+
+    <article>
+        <h1>Daily Journal</h1>
+    </article>
+    <form action="">
         <fieldset>
             <label for="journalDate">Date of entry</label>
             <input type="date" name="journalData" id="journalData">
@@ -26,12 +32,27 @@
 
         <fieldset>
             <label for="moodForTheDay">Mood for the day</label>
-            <select name="Mood for the day" id=""></select>
-        </fieldset>  
-            <button>
-                <option value="recordJournalEntry">Record Journal Entry</option>
-            </button>
-        </fieldset> 
+            <select name="Mood for the day" id="">
+                <option value="Optimistic">Optimistic</option>
+                <option value="Motivated" class="value">Motivated</option>
+                <option value="Productive" class="value">Productive</option>
+                <option value="Resourceful">Resourceful</option>
+                <option value="Stressed">Stressed</option>
+                <option value="Perplexed" class="value">Perplexed</option>
+                <option value="Discouraged" class="value">Discouraged</option>
+                <option value="Incapable" class="value">Incapable</option>
+            </select>
+        </fieldset>
+        <button>
+            <option value="recordJournalEntry">Record Journal Entry</option>
+        </button>
+        </fieldset>
+    </form>
+
     
+    <article id="entryLog"></article>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>
