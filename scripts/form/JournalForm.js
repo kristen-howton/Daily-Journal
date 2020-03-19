@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+const contentTarget = document.querySelector(".journalFormContainer")
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Journal</title>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-
-<body>
-
-
-    <article>
-        <h1>Daily Journal</h1>
-    </article>
-
-    <section class="journalFormContainer"></section>
-    <!-- <form action="">
+const render = () => {
+    contentTarget.innerHTML = `
+        <form action="">
         <fieldset>
             <label for="journalDate">Date of entry</label>
             <input type="date" name="journalData" id="journalData">
@@ -49,12 +35,13 @@
             <option value="recordJournalEntry">Record Journal Entry</option>
         </button>
         </fieldset>
-    </form> -->
+    </form>
+    `
+}
 
-    
-    <article id="entryLog"></article>
+const JournalFormComponent = () => {
+    render()
+}
 
-    <script type="module" src="./scripts/main.js"></script>
-</body>
 
-</html>
+export default JournalFormComponent
