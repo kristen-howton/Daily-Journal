@@ -10,11 +10,22 @@ export const useJournalEntries = () => {
 }
 
 export const getJournalEntries = () => {
-    return fetch("http://localhost:3000/entries") // Fetch from the API
-    .then(response => response.json())  // Parse as JSON
-    .then(parsedEntries => {
-        entries = parsedEntries
-        // What should happen when we finally have the array?
-    })
+    return fetch("http://localhost:3000/entries")
+        .then(response => response.json())
+        .then(parsedEntries => {
+            entries = parsedEntries
+        })
 
 }
+
+export const saveJournalEntry = (newJournalEntry) => {
+    return fetch("http://localhost:3000/entries", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newJournalEntry)
+    })
+        .then(getJournalEntries)
+}
+

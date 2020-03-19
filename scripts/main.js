@@ -6,4 +6,3 @@ import JournalFormComponent from "./form/JournalForm.js";
 JournalFormComponent()
 
 getJournalEntries().then(EntryListComponent())
-
